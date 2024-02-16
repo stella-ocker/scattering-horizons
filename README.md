@@ -1,6 +1,6 @@
 # Scattering Horizons
 
-This repository provides Python scripts that simulate the DM and scattering time (in ms at 1 GHz) contributions from galaxies along FRB lines-of-sight (LOSs), including nearby galaxies in the Gravitational Wave Catalog (GWGC), more distant intervening galaxies (modeled statistically using a halo mass function), and FRB host galaxies. The Milky Way can be modeled separately using NE2001 or YMW16 and an electron density prescription for the Galactic halo. Please cite [Ocker et al. (2022)](https://ui.adsabs.harvard.edu/abs/2022ApJ...934...71O/abstract) for use of this repository. A complete description of the methods can be found in the paper.
+This repository provides Python scripts that simulate the DM and scattering time (in ms at 1 GHz) contributions from galaxies along FRB lines-of-sight (LOSs), including nearby galaxies in the Gravitational Wave Galaxy Catalog (GWGC), more distant intervening galaxies (modeled statistically using a halo mass function), and FRB host galaxies. The Milky Way can be modeled separately using NE2001 or YMW16 and an electron density prescription for the Galactic halo. Please cite [Ocker et al. (2022)](https://ui.adsabs.harvard.edu/abs/2022ApJ...934...71O/abstract) for use of this repository. A complete description of the methods can be found in the paper.
 
 ## Dependencies and Installation
 
