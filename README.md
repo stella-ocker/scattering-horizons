@@ -30,7 +30,7 @@ Predicts DM and scattering times from galaxies in GWGC. The script reads in the 
 
 **intervening_galaxies.py**
 
-Simulates DMs and scattering times from intervening galaxies at moderate redshift (i.e., beyond the Local Volume captured in gwgc_tau.py). Galaxy types are defined by stellar mass, which is estimated based on the stellar-to-halo mass function from [Girelli et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A.135G/abstract). Please cite Girelli et al. if you make use of this script.
+Simulates DMs and scattering times from intervening galaxies at moderate redshift (i.e., beyond the Local Volume captured in gwgc_tau.py). Galaxy types are defined by stellar mass, which is estimated from the halo mass (drawn from the halo mass function) using the stellar-to-halo mass function from [Girelli et al. (2020)](https://ui.adsabs.harvard.edu/abs/2020A%26A...634A.135G/abstract). Please cite Girelli et al. if you make use of this script.
 
 *To use this code:* 
 - Modify the value of the FRB source redshift on Line 202. 
