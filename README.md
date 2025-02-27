@@ -10,7 +10,7 @@ All of the provided scripts should be downloaded into the same working directory
 
 ## Code Description 
 
-There are five scripts in the repository:
+There are six scripts in the repository:
 
 **tauDMdisk.py**
 
@@ -47,6 +47,13 @@ Simulates host galaxy contributions, assuming FRBs are uniformly distributed wit
 - Modify the output file path.
 - Modify the number of FRBs to simulate by changing the shapes of 'tautot_arr', 'dmtot_arr', and 'galtype_arr' on Lines 214-216. The default is to simulate 361x181 FRBs.
 - Optionally, you can change the maximum radius within which FRBs are produced. The default is to assume FRBs can occur anywhere within the galaxy disk (scaled to 19 kpc for a Milky Way-mass spiral galaxy); the relevant variable to change is 'rdisk' defined on Lines 270, 282, and 294 (in three separate code blocks for the three different galaxy types). 
+
+**DMhalo.py**
+
+A set of convenience functions for calculating the geometric leverage factor, the halo virial radius, and the halo DM based on the mNFW profile [Prochaska & Zheng (2019)](https://ui.adsabs.harvard.edu/abs/2019MNRAS.485..648P/abstract). This script is imported in some of the scripts above. Please cite Prochaska & Zheng if you make use of this script. 
+
+*To use this code:*
+See the instructions at the bottom of the script.
 
 ## Some Caveats
 
