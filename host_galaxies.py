@@ -266,8 +266,8 @@ def host_galaxies_eval(frb_zs):
             #galmass = random.choice(spirellip_massbins,p=spirellip_masspdf)
             #r200_halo = virial_radius((10.**galmass)*Msun,frb_zs)
             r200_fid = virial_radius((1.5*10.**12.)*Msun,frb_zs)
-            #rdisk = 0.2*(r200_halo/r200_fid) # restricted locations
-            rdisk = 19.*(r200_halo/r200_fid)
+            rdisk = 0.2*(r200_halo/r200_fid) # restricted locations
+            #rdisk = 19.*(r200_halo/r200_fid) # anywhere in the disk
             r_samp = random.uniform(0.,rdisk)
             host_path = random.uniform(-rdisk,rdisk)
             dmhalo,tauhalo = tauDM_halo(frb_zs,halo_mass,r_samp,nu)
@@ -278,8 +278,8 @@ def host_galaxies_eval(frb_zs):
             #galmass = random.choice(spirellip_massbins,p=spirellip_masspdf)
             #r200_halo = virial_radius((10.**galmass)*Msun,frb_zs)
             r200_fid = virial_radius((1.5*10.**12.)*Msun,frb_zs)
-            #rdisk = 0.2*(r200_halo/r200_fid) # restricted locations
-            rdisk = 19.*(r200_halo/r200_fid)
+            rdisk = 0.2*(r200_halo/r200_fid) # restricted locations
+            #rdisk = 19.*(r200_halo/r200_fid) # anywhere in the disk
             r_samp = random.uniform(0.,rdisk)
             host_path = random.uniform(-rdisk,rdisk)
             dmhalo,tauhalo = tauDM_halo(frb_zs,halo_mass,r_samp,nu)
@@ -290,8 +290,8 @@ def host_galaxies_eval(frb_zs):
             #galmass = random.choice(dwarf_massbins,p=dwarf_masspdf)
             #r200_halo = virial_radius((10.**galmass)*Msun,frb_zs)
             r200_fid = virial_radius((10.**9.8)*Msun,frb_zs)
-            #rdisk = 0.2*(r200_halo/r200_fid) # restricted locations
-            rdisk = 19.*(r200_halo/r200_fid)
+            rdisk = 0.2*(r200_halo/r200_fid) # restricted locations
+            #rdisk = 19.*(r200_halo/r200_fid) # anywhere in the disk
             r_samp = random.uniform(0.,rdisk)
             host_path = random.uniform(-rdisk,rdisk)
             dmhalo,tauhalo = tauDM_halo(frb_zs,halo_mass,r_samp,nu)
@@ -306,16 +306,16 @@ def host_galaxies_eval(frb_zs):
 print('zs = 5')
 tautot_arr,dmtot_arr,galtype_arr = host_galaxies_eval(frb_zs=5.)
 print('saving')
-savez('/Users/stellaocker/Desktop/host_galaxies/hostgal_allsky_zs5_3gal_stellmass_restricted',tautot_arr=tautot_arr,dmtot_arr=dmtot_arr,galtype_arr=galtype_arr)
+savez('hostgal_allsky_zs5_3gal_stellmass_restricted',tautot_arr=tautot_arr,dmtot_arr=dmtot_arr,galtype_arr=galtype_arr)
 
 print('zs = 1')
 tautot_arr,dmtot_arr,galtype_arr = host_galaxies_eval(frb_zs=1.)
 print('saving')
-savez('/Users/stellaocker/Desktop/host_galaxies/hostgal_allsky_zs1_3gal_stellmass_restricted',tautot_arr=tautot_arr,dmtot_arr=dmtot_arr,galtype_arr=galtype_arr)
+savez('hostgal_allsky_zs1_3gal_stellmass_restricted',tautot_arr=tautot_arr,dmtot_arr=dmtot_arr,galtype_arr=galtype_arr)
 
 print('zs = 0.5')
 tautot_arr,dmtot_arr,galtype_arr = host_galaxies_eval(frb_zs=0.5)
 print('saving')
-savez('/Users/stellaocker/Desktop/host_galaxies/hostgal_allsky_zs0point5_3gal_stellmass_restricted',tautot_arr=tautot_arr,dmtot_arr=dmtot_arr,galtype_arr=galtype_arr)
+savez('hostgal_allsky_zs0point5_3gal_stellmass_restricted',tautot_arr=tautot_arr,dmtot_arr=dmtot_arr,galtype_arr=galtype_arr)
 
 
