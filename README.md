@@ -46,7 +46,7 @@ Simulates host galaxy contributions, assuming FRBs are uniformly distributed wit
 - DM and scattering times are generated from Line 306 onwards for a few different source redshifts, by evaluating the function 'host_galaxies_eval(frb_zs)'. Modify the value of 'frb_zs' and or comment out unnecessary lines of code.
 - Modify the output file path.
 - Modify the number of FRBs to simulate by changing the shapes of 'tautot_arr', 'dmtot_arr', and 'galtype_arr' on Lines 214-216. The default is to simulate 361x181 FRBs.
-- Optionally, you can change the maximum radius within which FRBs are produced. The default is to assume FRBs can occur anywhere within the galaxy disk (scaled to 19 kpc for a Milky Way-mass spiral galaxy); the relevant variable to change is 'rdisk' defined on Lines 270, 282, and 294 (in three separate code blocks for the three different galaxy types). 
+- Optionally, you can change the maximum radius within which FRBs are produced. The default is to assume FRBs can occur within 200 pc of the galaxy center (scaled to 19 kpc for a Milky Way-mass spiral galaxy); alternatively, you can change the maximum radius to the size of the disk by uncommenting Lines 270, 282, and 294.
 
 **DMhalo.py**
 
